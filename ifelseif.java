@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class ifelseif
+class Ifelseif
 {
 	public static void main (String args [])
 	{

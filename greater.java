@@ -1,4 +1,4 @@
-class greater
+class Greater
 {
 	public static void main(String args[])
 

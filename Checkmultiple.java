@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Checkmultiple
+class CheckMultiple
 {
 	public static void main (String args [])
 	{

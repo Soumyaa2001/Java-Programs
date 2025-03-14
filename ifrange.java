@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class ifrange
+class Ifrange
 {
 	public static void main (String args [])
 	{

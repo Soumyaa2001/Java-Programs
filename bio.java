@@ -1,4 +1,4 @@
-class bio
+class Bio
 {
 	public static void main(String[] args)
 	{

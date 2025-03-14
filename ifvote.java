@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class ifvote
+class Ifvote
 {
 	public static void main (String args [])
 	{

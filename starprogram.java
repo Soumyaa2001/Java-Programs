@@ -1,4 +1,4 @@
-class starprogram
+class Starprogram
 {
 	public static void main(String[] args)
 	{

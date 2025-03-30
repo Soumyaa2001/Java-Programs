@@ -16,7 +16,6 @@ class PrimeSum{
 		 sum = sum+x;
 		
 		}
-		 System.out.println(sum);
-		
+		 System.out.println(sum);		
 	}
 }

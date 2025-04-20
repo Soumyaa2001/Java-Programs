@@ -32,6 +32,7 @@ class TcsNqt1
 			}
 			count=0;
 		}
+
 		return fact;
 
 	}

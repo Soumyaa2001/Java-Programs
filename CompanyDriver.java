@@ -1,57 +1,58 @@
-class Company
+class Employee
 {
-	double basesalary;
-	String name;
-	Company(double basesalary, String name)
-	{
-		this.basesalary=basesalary;
-		this.name=name;
-	}
-	public double calculatesalary()
-	{
-		return basesalary;
+	private double basicsalary;
+	private int empid;
+	private String name;
 
-	}
 }
 
-class Employee extends Company
+class Developer extends Employee
 {
-	int noofhoursworked;
-	Employee(double basesalary, String name, int noofhoursworked)
+	double hike;
+	Developer(double hike,  double basicsalary, int empid, String name)
 	{
-		super( basesalary,  name);
-		this.noofhoursworked=noofhoursworked;
+		super(basicsalary,empid,name);
+		this.hike=hike;
 	}
-	@Override
-	public double calculatesalary()
-	{
-		return(((basesalary/28)/9)*noofhoursworked) ;
 
+	public void display()
+	{
+		System.out.println(" Basic Salary :" + getBasicSlary());
+		System.out.println(" Employee id :" + getEmpid());
+		System.out.println(" Employee Name :" + getName());
+		System.out.println(" Hike :" + hike);
+	}
+	public double calculateSalary()
+	{
+		return(getBasicSlary() + getBasicSlary()*(hike/100));
 	}
 }
-class Manager extends Company
+class Tester extends Employee
 {
-	double bonus;
-	Manager(double basesalary, String name, double bonus)
+	double hike;
+	Developer(double hike,  double basicsalary, int empid, String name)
 	{
-		super( basesalary,  name);
-		this.bonus=bonus;
+		super(basicsalary,empid,name);
+		this.hike=hike;
 	}
-	@Override
-	public double calculatesalary()
-	{
-		return(basesalary+bonus);
 
+	public void display()
+	{
+		System.out.println(" Basic Salary :" + getBasicSlary());
+		System.out.println(" Employee id :" + getEmpid());
+		System.out.println(" Employee Name :" + getName());
+		System.out.println(" Hike :" + hike);
 	}
+	public double calculateSalary()
+	{
+		return(getBasicSlary() + getBasicSlary()*(hike/100));
+	}
+
 }
+
 class CompanyDriver
 {
 	public static void main(String[] args) {
-		Company c;
-		c=new Employee(30000d, "Soumya", 200);
-		System.out.println(c.calculatesalary());
-		Employee e = (Employee) c;
-		c = new Manager(30000d, "Raju", 2000d);
-		System.out.println(c.calculatesalary());
+		
 	}
 }

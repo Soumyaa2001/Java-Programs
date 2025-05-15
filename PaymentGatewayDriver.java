@@ -13,7 +13,7 @@ class CreditCard implements PaymentGateway
 class UpiPayments implements PaymentGateway
 {
 	@Override
-	public double Pay()
+	public double pay()
 	{
 		return 5000d;
 	}
